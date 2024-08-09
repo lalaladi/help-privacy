@@ -73,6 +73,7 @@
     <link href="assets/part/card-team/style.css" rel="stylesheet" />
     <link href="assets/part/event-venue/style.css" rel="stylesheet" />
     <link href="assets/part/breadcrumbs-banner/banner.css" rel="stylesheet" />
+    <link href="assets/part/breadcrumbs-banner/style.css" rel="stylesheet" />
 
     <!--  CDN  -->
     <script
@@ -299,13 +300,15 @@
 
     <main id="main">
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs-banner" >
+    <div class="breadcrumbs-banner">
       <div class="container">
         <div class="banner-block">
-            <span><a href="index.html">Help Center</a></span>
-            <span class="dvdr"><i class="fa fa-angle-right"></i></span>
-            <span><a href="index.html">F.A.Q</a></span>
+            <span>Ada yang bisa kami bantu?</span>
         </div>
+        <form action="javascript:void" role="form" id="subcriptions" method="post" class="col-md-8">
+          <input type="tel" name="Surel" placeholder="Nomor Whatsapp" />
+          <input type="submit" value="Whatsapp Admin" onclick="Subcription()" />
+        </form>
       </div>
     </div><!-- End Breadcrumbs -->
         
@@ -315,7 +318,7 @@
           <div class="row">
               <div class="col-lg-6 mt-4">
                   <div class="section-title">
-                    <h5>Choose Topik</h5>
+                    <h5>Choose Topic</h5>
                     <h3>Most <span>Asking</span> Topic</h3>
                     <p class="text-start">Berikut adalah topik-topik yang sering ditanyakan oleh calon client, member hingga calon intern dialogika. </p>
                   </div>
@@ -395,7 +398,7 @@
                           </div>
                         </li>
                     
-                      <span class="badge rounded-pill bg-primary">What?</span>
+                      <span class="badge rounded-pill bg-primary" style="margin:8px 0px 8px;">About Intern</span>
                       <li>
                         <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Is this internship paid or unpaid?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                         <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
@@ -430,7 +433,7 @@
                       </li>
 
 
-                      <span class="badge rounded-pill bg-primary">How?</span>
+                      <span class="badge rounded-pill bg-primary" style="margin:8px 0px 8px;">About Class</span>
                       <li>
                         <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-1">How can I apply for this internship?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                         <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
@@ -523,9 +526,12 @@
         <i class="bi bi-tiktok "></i>
       </button>
     </div>
+    
+    
 
     <script src="assets/part/gallery-ipsum/script.js"></script>
-    <script src="./assets/js/sosmed.js"></script>
+    
+    <script src="assets/js/sosmed.js"></script>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
